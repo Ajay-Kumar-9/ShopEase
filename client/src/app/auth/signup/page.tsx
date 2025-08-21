@@ -49,15 +49,7 @@ export default function SignupPage() {
 
       toast.success("Account created successfully!");
 
-      // Save user info locally except password
-      localStorage.setItem(
-        "user",
-        JSON.stringify({
-          firstName: payload.firstName,
-          lastName: payload.lastName,
-          email: payload.email,
-        })
-      );
+
 
       // Save user info locally except password
       localStorage.setItem(
