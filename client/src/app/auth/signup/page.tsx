@@ -51,16 +51,6 @@ export default function SignupPage() {
 
 
 
-      // Save user info locally except password
-      localStorage.setItem(
-        "user",
-        JSON.stringify({
-          firstName: payload.firstName,
-          lastName: payload.lastName,
-          email: payload.email,
-        })
-      );
-
       // Redirect to login page
       window.location.href = "/auth/login";
     } catch (error) {
