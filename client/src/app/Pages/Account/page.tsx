@@ -71,7 +71,7 @@ export default function AccountPage() {
 
   const handleSaveChanges = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/update-profile", {
+      const response = await fetch("https://shopease-3it8.onrender.com/api/update-profile", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

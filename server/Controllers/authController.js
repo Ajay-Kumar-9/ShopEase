@@ -47,13 +47,7 @@ export const Signup = async (req, res) => {
       message: "Signup successful",
       success: true,
       token: jwtToken,
-      user: {
-        id: newUser._id,
-        firstName: newUser.firstName,
-        lastName: newUser.lastName,
-        email: newUser.email,
-        address: newUser.address,
-      },
+     
     });
   } catch (error) {
     console.error("Error during signup:", error.message);
@@ -65,7 +59,7 @@ export const Signup = async (req, res) => {
   }
 };
 
-// Login
+
 // Login
 export const Login = async (req, res) => {
   try {

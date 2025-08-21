@@ -92,7 +92,7 @@ const handlePlaceOrder = async () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/details", {
+    const res = await fetch("https://shopease-3it8.onrender.com/api/details", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
