@@ -66,7 +66,7 @@ export default function Product() {
       originalPrice: 170,
       rating: 4.5,
       reviews: 65,
-      image: "/Images/Ipad.webp",
+      image: "/Images/ipad.jpeg",
     },
     {
       id: 4,
@@ -195,7 +195,7 @@ export default function Product() {
           {/* Image */}
           <div className="flex-1 flex justify-center">
             <Image
-              src="/Images/Speaker.webp"
+              src="/Images/sony.jpg"
               alt="Sony Speaker"
               width={400}
               height={400}
