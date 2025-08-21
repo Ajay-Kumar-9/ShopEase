@@ -34,11 +34,14 @@ export default function SignupPage() {
     };
 
     try {
-      const response = await fetch("https://shopease-3it8.onrender.com/api/auth/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        "https://shopease-3it8.onrender.com/api/auth/signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
 
       const data = await response.json();
 
@@ -48,8 +51,6 @@ export default function SignupPage() {
       }
 
       toast.success("Account created successfully!");
-
-
 
       // Redirect to login page
       window.location.href = "/auth/login";
